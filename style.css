@@ -11,14 +11,13 @@ a#navbarDropdown {
 }
 
 header {
-    height: 200px;
-    width: 100%;
+    height: 300px;
     position: relative;
-    display: block;
+    margin-bottom: 20px;
 }
 .imgHome {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     object-position: 75% 25%;
 }
@@ -30,18 +29,132 @@ header {
     top : 50%;
     left: 10%;
     right: 20%;
+    background-color: #fff;
+    padding: 10px;
 }
 
 h2 {
+    font-weight: bold;
     font-size: 17px;
+    color: black;
+    text-align: center;
 }
 
-span.subTitle {
+.headerText span.subTitle {
+    color: #015FA7;
     font-size: 15px;
 }
 
+section.agir {
+    height: 300px;
+    position: relative;
+}
+
+.mainText {
+    font-weight: 700;
+    position: absolute;
+    color: #fff;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 10px;
+}
+
+.mainText span.subTitle {
+    font-size: 15px;
+    color: #015FA7;
+}
+
+section.be {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.be div{
+    display: flex;
+    flex-direction: column;
+}
+
+section.be button {
+    margin: 5px auto;
+    font-size: 15px;
+}
+
+section.actus {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    max-width: 100%;
+    padding: 10px;
+}
+
+section.actus::before {
+    content: "";
+    width: 200%;
+    max-width: 99vw;
+    height: 100%;
+    background-color: #015FA7;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.actus div {
+    margin: 5px;
+    position: relative;
+}
+
+section.actus div.large{
+    height: 308px;
+    width: 295px;
+}
+
+section.actus div.small{
+    height: 155px;
+    width: 295px;
+}
+
+section.actus img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+section.actus div.text {
+    background-color: #fff;
+    position: absolute;
+    padding: 10px;
+    width: 80%;
+    z-index: 2;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.actus h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+section.actus .subTitle {
+    text-align: center;
+    font-size: .8rem;
+}
+
+
 @media screen and (min-width: 767px) {
-    .imgHome {
+
+    header {
+        height: 400px;
+    }
+
+    section.agir {
         height: 400px;
     }
 
@@ -53,6 +166,15 @@ span.subTitle {
         font-size: 30px;
     }       
 
+    section.be div{
+        flex-direction: row;
+        width: 500px;
+    }
 
+    section.actus {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1000px;
+    }
     
 }
