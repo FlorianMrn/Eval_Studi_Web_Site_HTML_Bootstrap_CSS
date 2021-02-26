@@ -1,4 +1,4 @@
-# Eval_Studi_Web_Site_HTML_Bootstrap_CSS
+# Context du projet
 
 Un site internet présente de nombreux intérêts pour une association, surtout en termes de visibilité (c’est
 à vous de choisir une association, qu’elle soit réelle ou fictive, l’important sera votre code).
